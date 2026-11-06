@@ -21,6 +21,8 @@
 <main class="wrap">
   <a class="back" href="index.html#sleep">← 返回首页</a>
   <article class="article">
+    <img class="cover" src="cover-sleep-rhythm.jpg" alt="生物钟封面图">
+    <div class="inner">
     <div class="meta"><span class="cat">睡 · 节律</span>2026-11-06</div>
     <h1>生物钟是怎么养成的</h1>
     <p>很多人纠结「几点睡才健康」，其实<strong>比几点睡更重要的，是每天同一时间起床</strong>——包括周末。起床时间是身体校准生物钟的锚点。</p>
@@ -39,10 +41,26 @@
       <li>固定起床 + 晨间见光，两周左右见效</li>
       <li>周末别大幅补觉</li>
     </ol>
+  </div>
   </article>
+
+  <nav class="pager">
+    <a href="sleep-routine.html"><span class="dir">← 上一篇</span><span class="ptitle">睡前一小时减法清单</span></a>
+    <a class="next" href="mind-breathing.html"><span class="dir">下一篇 →</span><span class="ptitle">4-7-8 呼吸法入门</span></a>
+  </nav>
 </main>
 <footer class="site">
   <div class="wrap">慢慢变好 · 本站内容为个人学习笔记，不构成医疗建议</div>
 </footer>
+
+<div class="progress" id="progress"></div>
+<script>
+window.addEventListener("scroll", function() {
+  var h = document.documentElement;
+  var max = h.scrollHeight - h.clientHeight;
+  var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  document.getElementById("progress").style.width = p + "%";
+});
+</script>
 </body>
 </html>

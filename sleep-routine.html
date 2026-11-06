@@ -21,6 +21,8 @@
 <main class="wrap">
   <a class="back" href="index.html#sleep">← 返回首页</a>
   <article class="article">
+    <img class="cover" src="cover-sleep-routine.jpg" alt="睡前清单封面图">
+    <div class="inner">
     <div class="meta"><span class="cat">睡 · 睡前</span>2026-11-06</div>
     <h1>睡前一小时减法清单</h1>
     <p>睡眠不是躺下那一刻开始的，而是提前一小时就开始「降温」。这一小时的原则只有一个字：<strong>减</strong>。</p>
@@ -40,10 +42,26 @@
       <li>卧室调凉一点，手机放远一点</li>
       <li>空出来的时间用安静的小事填上</li>
     </ol>
+  </div>
   </article>
+
+  <nav class="pager">
+    <a href="move-breaks.html"><span class="dir">← 上一篇</span><span class="ptitle">久坐族的每小时两分钟</span></a>
+    <a class="next" href="sleep-rhythm.html"><span class="dir">下一篇 →</span><span class="ptitle">生物钟是怎么养成的</span></a>
+  </nav>
 </main>
 <footer class="site">
   <div class="wrap">慢慢变好 · 本站内容为个人学习笔记，不构成医疗建议</div>
 </footer>
+
+<div class="progress" id="progress"></div>
+<script>
+window.addEventListener("scroll", function() {
+  var h = document.documentElement;
+  var max = h.scrollHeight - h.clientHeight;
+  var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  document.getElementById("progress").style.width = p + "%";
+});
+</script>
 </body>
 </html>

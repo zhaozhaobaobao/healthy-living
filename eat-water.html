@@ -21,6 +21,8 @@
 <main class="wrap">
   <a class="back" href="index.html#eat">← 返回首页</a>
   <article class="article">
+    <img class="cover" src="cover-eat-water.jpg" alt="喝水指南封面图">
+    <div class="inner">
     <div class="meta"><span class="cat">吃 · 饮水</span>2026-11-06</div>
     <h1>每天到底要喝多少水</h1>
     <p>「每天八杯水」流传很广，但杯子有大有小。更可靠的参考是<strong>每天 1.5–1.7 升</strong>（中国居民膳食指南建议量），运动多、天气热时再加。</p>
@@ -40,10 +42,26 @@
       <li>晨起一杯，水瓶放看得见的地方</li>
       <li>少用含糖饮料凑数</li>
     </ol>
+  </div>
   </article>
+
+  <nav class="pager">
+    <a href="eat-plate.html"><span class="dir">← 上一篇</span><span class="ptitle">每餐怎么搭：手掌饮食法</span></a>
+    <a class="next" href="move-walking.html"><span class="dir">下一篇 →</span><span class="ptitle">快走入门：每天 20 分钟</span></a>
+  </nav>
 </main>
 <footer class="site">
   <div class="wrap">慢慢变好 · 本站内容为个人学习笔记，不构成医疗建议</div>
 </footer>
+
+<div class="progress" id="progress"></div>
+<script>
+window.addEventListener("scroll", function() {
+  var h = document.documentElement;
+  var max = h.scrollHeight - h.clientHeight;
+  var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  document.getElementById("progress").style.width = p + "%";
+});
+</script>
 </body>
 </html>

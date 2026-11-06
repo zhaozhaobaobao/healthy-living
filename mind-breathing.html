@@ -21,6 +21,8 @@
 <main class="wrap">
   <a class="back" href="index.html#mind">← 返回首页</a>
   <article class="article">
+    <img class="cover" src="cover-mind-breathing.jpg" alt="呼吸练习封面图">
+    <div class="inner">
     <div class="meta"><span class="cat">心态 · 减压</span>2026-11-06</div>
     <h1>4-7-8 呼吸法入门</h1>
     <p>紧张、心慌、睡前停不下来的胡思乱想——对付它们最快的工具就长在自己身上：放慢呼气。延长呼气能激活身体的「刹车系统」（副交感神经），几分钟内让心率降下来。</p>
@@ -44,10 +46,26 @@
       <li>核心是「呼气比吸气长」</li>
       <li>每天练一次，关键时刻才用得出来</li>
     </ol>
+  </div>
   </article>
+
+  <nav class="pager">
+    <a href="sleep-rhythm.html"><span class="dir">← 上一篇</span><span class="ptitle">生物钟是怎么养成的</span></a>
+    <a class="next" href="mind-journal.html"><span class="dir">下一篇 →</span><span class="ptitle">三件好事练习</span></a>
+  </nav>
 </main>
 <footer class="site">
   <div class="wrap">慢慢变好 · 本站内容为个人学习笔记，不构成医疗建议</div>
 </footer>
+
+<div class="progress" id="progress"></div>
+<script>
+window.addEventListener("scroll", function() {
+  var h = document.documentElement;
+  var max = h.scrollHeight - h.clientHeight;
+  var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  document.getElementById("progress").style.width = p + "%";
+});
+</script>
 </body>
 </html>

@@ -21,6 +21,8 @@
 <main class="wrap">
   <a class="back" href="index.html#move">← 返回首页</a>
   <article class="article">
+    <img class="cover" src="cover-move-walking.jpg" alt="快走入门封面图">
+    <div class="inner">
     <div class="meta"><span class="cat">动 · 入门</span>2026-11-06</div>
     <h1>快走入门：每天 20 分钟</h1>
     <p>开始运动最大的敌人不是「练什么」，而是「开始」。快走不需要装备、不怕受伤、门槛几乎为零，是最好的起点。</p>
@@ -36,10 +38,26 @@
     <blockquote>世界卫生组织建议成人每周至少 150 分钟中等强度活动——每天 20 分钟快走，一周就是 140 分钟，几乎达标。</blockquote>
     <h2>走顺了之后</h2>
     <p>坚持两三周后，可以试着把其中两天换成慢跑或骑行，快走转为「底座运动」。不用急，先让「每天动一动」变成像刷牙一样的默认动作。</p>
+  </div>
   </article>
+
+  <nav class="pager">
+    <a href="eat-water.html"><span class="dir">← 上一篇</span><span class="ptitle">每天到底要喝多少水</span></a>
+    <a class="next" href="move-breaks.html"><span class="dir">下一篇 →</span><span class="ptitle">久坐族的每小时两分钟</span></a>
+  </nav>
 </main>
 <footer class="site">
   <div class="wrap">慢慢变好 · 本站内容为个人学习笔记，不构成医疗建议</div>
 </footer>
+
+<div class="progress" id="progress"></div>
+<script>
+window.addEventListener("scroll", function() {
+  var h = document.documentElement;
+  var max = h.scrollHeight - h.clientHeight;
+  var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  document.getElementById("progress").style.width = p + "%";
+});
+</script>
 </body>
 </html>

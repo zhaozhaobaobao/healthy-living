@@ -21,6 +21,8 @@
 <main class="wrap">
   <a class="back" href="index.html#mind">← 返回首页</a>
   <article class="article">
+    <img class="cover" src="cover-mind-journal.jpg" alt="三件好事封面图">
+    <div class="inner">
     <div class="meta"><span class="cat">心态 · 记录</span>2026-11-06</div>
     <h1>三件好事练习</h1>
     <p>这是心理学里被反复验证的经典练习（积极心理学之父塞利格曼提出）：每天睡前写下<strong>今天顺利发生的三件小事</strong>，并写一句「为什么它发生了」。坚持两周，多数人会感到情绪明显变稳。</p>
@@ -38,10 +40,26 @@
     </blockquote>
     <h2>为什么有用</h2>
     <p>大脑天生对负面信息更敏感（进化留下的自我保护）。这个练习相当于每天给注意力做一次「手动校准」：留意好事，好事才会被存进记忆。两周后再回头看，你会发现自己对「顺利的一天」的感知变了。</p>
+  </div>
   </article>
+
+  <nav class="pager">
+    <a href="mind-breathing.html"><span class="dir">← 上一篇</span><span class="ptitle">4-7-8 呼吸法入门</span></a>
+    <a class="next" href="eat-plate.html"><span class="dir">下一篇 →</span><span class="ptitle">每餐怎么搭：手掌饮食法</span></a>
+  </nav>
 </main>
 <footer class="site">
   <div class="wrap">慢慢变好 · 本站内容为个人学习笔记，不构成医疗建议</div>
 </footer>
+
+<div class="progress" id="progress"></div>
+<script>
+window.addEventListener("scroll", function() {
+  var h = document.documentElement;
+  var max = h.scrollHeight - h.clientHeight;
+  var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  document.getElementById("progress").style.width = p + "%";
+});
+</script>
 </body>
 </html>

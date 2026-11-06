@@ -21,6 +21,8 @@
 <main class="wrap">
   <a class="back" href="index.html#move">← 返回首页</a>
   <article class="article">
+    <img class="cover" src="cover-move-breaks.jpg" alt="久坐起身封面图">
+    <div class="inner">
     <div class="meta"><span class="cat">动 · 习惯</span>2026-11-06</div>
     <h1>久坐族的每小时两分钟</h1>
     <p>研究发现，长时间连续久坐对代谢的影响，很难被周末的突击锻炼抵消。好消息是：对抗它不需要健身房，<strong>每小时起身两分钟</strong>就有效果。</p>
@@ -40,10 +42,26 @@
       <li>内容随意：走动、深蹲、远眺都行</li>
       <li>周末宅家同理，每集剧之间起身一次</li>
     </ol>
+  </div>
   </article>
+
+  <nav class="pager">
+    <a href="move-walking.html"><span class="dir">← 上一篇</span><span class="ptitle">快走入门：每天 20 分钟</span></a>
+    <a class="next" href="sleep-routine.html"><span class="dir">下一篇 →</span><span class="ptitle">睡前一小时减法清单</span></a>
+  </nav>
 </main>
 <footer class="site">
   <div class="wrap">慢慢变好 · 本站内容为个人学习笔记，不构成医疗建议</div>
 </footer>
+
+<div class="progress" id="progress"></div>
+<script>
+window.addEventListener("scroll", function() {
+  var h = document.documentElement;
+  var max = h.scrollHeight - h.clientHeight;
+  var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  document.getElementById("progress").style.width = p + "%";
+});
+</script>
 </body>
 </html>

@@ -21,6 +21,8 @@
 <main class="wrap">
   <a class="back" href="index.html#eat">← 返回首页</a>
   <article class="article">
+    <img class="cover" src="cover-eat-plate.jpg" alt="手掌饮食法封面图">
+    <div class="inner">
     <div class="meta"><span class="cat">吃 · 饮食</span>2026-11-06</div>
     <h1>每餐怎么搭：手掌饮食法</h1>
     <p>数卡路里太累，大多数人坚持不了一周。更实用的办法是用手当尺子——你的手掌比例基本和身体匹配，随身携带，永远不缺工具。</p>
@@ -40,10 +42,26 @@
       <li>先吃菜和肉，最后吃主食</li>
       <li>吃多了不必自责，下一顿回归正常即可</li>
     </ol>
+  </div>
   </article>
+
+  <nav class="pager">
+    <a href="mind-journal.html"><span class="dir">← 上一篇</span><span class="ptitle">三件好事练习</span></a>
+    <a class="next" href="eat-water.html"><span class="dir">下一篇 →</span><span class="ptitle">每天到底要喝多少水</span></a>
+  </nav>
 </main>
 <footer class="site">
   <div class="wrap">慢慢变好 · 本站内容为个人学习笔记，不构成医疗建议</div>
 </footer>
+
+<div class="progress" id="progress"></div>
+<script>
+window.addEventListener("scroll", function() {
+  var h = document.documentElement;
+  var max = h.scrollHeight - h.clientHeight;
+  var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  document.getElementById("progress").style.width = p + "%";
+});
+</script>
 </body>
 </html>
